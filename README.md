@@ -39,6 +39,6 @@ These files must be extracted to run the simulation.
 The Allrun script will automatically handle the merging of the overset mesh components and start the simulation.
 
 * Target Directory: `./CASE**/`
-* Target File: `Allrun'
+* Target File: `Allrun`
 
 
