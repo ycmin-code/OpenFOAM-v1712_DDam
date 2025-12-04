@@ -18,10 +18,11 @@ These setups correspond to the validation cases presented in the manuscript.
 The repository is organized by simulation cases. Each case directory contains the overset mesh setup for the moving object and the background domain.
 
 * **DDam_OverInterDyMFoam/**
-    * **CASE00/**: Simultaneous opening of both gates (Lag: 0.0s)
+    * `CASE00/`: Simultaneous opening of both gates (Lag: 0.0s)
         * `movingObjectMesh/`: Component mesh setup (Overset mesh)
         * `backgroundAndMovingObject/`: Main simulation domain (Merged mesh)
-    * **CASE10/**: Asynchronous opening: 1.0s delay between gates
+    * `CASE10/`: Asynchronous opening: 1.0s delay between gates
+    * `CASE20/`: Asynchronous opening: 2.0s delay between gates
     * ...
 
 ## How to Run
