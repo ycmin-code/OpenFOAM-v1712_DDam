@@ -1,0 +1,49 @@
+#!/bin/sh
+cd ${0%/*} || exit 1                        # Run from this directory
+
+##################################################################################
+############            MOVING OBJECT TUTORIAL BY CFD-TRAINING        ############
+############                      www.cfd-training.com                ############
+############                   script for mesh generation             ############
+##################################################################################
+
+echo "----------> touch movingObject.foam"
+touch movingObject.foam
+
+echo "----------> blockMesh"
+blockMesh > log.blockMesh	
+
+echo "----------> mergeMeshes"
+mergeMeshes . ../movingObjectMesh -overwrite > log.mergeMeshes
+
+echo "----------> topoSet"
+topoSet > log.topoSet
+
+echo "----------> cp -R 0.orig 0"
+cp -R 0.orig 0
+
+echo "----------> writeCellCentres"
+postProcess -func writeCellCentres -time 0
+
+echo "----------> setFields"
+setFields > log.setFields
+
+echo "----------> decomposePar"
+decomposePar -force > log.decomposePar
+
+echo "----------> renumberMesh"
+mpirun -np 40 renumberMesh -parallel -overwrite > log.renumberMesh
+
+echo "----------> overInterDyMFoam"
+mpirun -hostfile hostfile -np 40 overInterDyMFoam -parallel > log.overInterDyMFoam
+
+echo "----------> reconstructPar"
+reconstructPar	> log.reconstructPar
+
+echo "----------> rm -rf processor*"
+rm -rf processor* 
+
+echo "----------> foamToVTK"
+foamToVTK > log.foamToVTK
+
+#------------------------------------------------------------------------------
