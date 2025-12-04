@@ -28,7 +28,7 @@ multiSolidBodyMotionSolverCoeffs
     	tabulated6DoFMotionCoeffs
     	{
         	CofG            ( 0.9935 0.29 -0.18 );
-        	timeDataFileName "$FOAM_CASE/constant/C00_wdisp.dat";
+        	timeDataFileName "$FOAM_CASE/constant/C20_wdisp.dat";
     	}
     }
     movingZone2
