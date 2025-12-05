@@ -32,7 +32,7 @@ To reproduce the validation results, please follow the steps below.
 The input files required to reproduce the water gate opening (moving object) are compressed due to GitHub file size limits.
 These files must be extracted to run the simulation.
 
-* Target Directory: `./CASE**/movingObjectMesh/constant/`
+* Target Directory: `./CASE**/backgroundAndMovingObject/constant/`
 * Target File: `C**_wdisp.zip` (e.g., `C00_wdisp.zip`)
 
 ### 2. Execute Simulation
