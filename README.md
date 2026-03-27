@@ -1,5 +1,7 @@
 # Numerical Setup for Double Dam-Break Experiment
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19246883.svg)](https://doi.org/10.5281/zenodo.19246883)
+
 ## Overview
 This repository contains the numerical simulation setup and input files for the manuscript titled:
 

@@ -3,7 +3,8 @@ title: "Numerical Setup for Double Dam-Break Experiment"
 message: "If you use this software, please cite the article below."
 type: software
 license: MIT
-doi: 10.1063/5.0315268
+doi: 10.5281/zenodo.19246883
+repository-code: "https://github.com/ycmin-code/OpenFOAM-v1712_DDam"
 authors:
   - family-names: Min
     given-names: Yongchim
