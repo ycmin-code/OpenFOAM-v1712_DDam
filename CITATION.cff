@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+title: "Numerical Setup for Double Dam-Break Experiment"
+message: "If you use this software, please cite the article below."
+type: software
+license: MIT
+doi: 10.1063/5.0315268
+authors:
+  - family-names: Min
+    given-names: Yongchim
+    orcid: "https://orcid.org/0000-0001-5530-3779"
+    affiliation: "Korea Institute of Ocean Science and Technology"
+  - family-names: Ok
+    given-names: Juhee
+    affiliation: "Korea Institute of Ocean Science and Technology"
+  - family-names: Kim
+    given-names: Yeulwoo
+    orcid: "https://orcid.org/0000-0003-4330-0348"
+    affiliation: "Pukyong National University"
+  - family-names: Delisle
+    given-names: Marie-Pierre C.
+    orcid: "https://orcid.org/0000-0003-1187-6043"
+    affiliation: "United States Naval Academy"
+  - family-names: Choi
+    given-names: Seongeun
+    orcid: "https://orcid.org/0000-0001-9976-0752"
+    affiliation: "Seoul National University"
+preferred-citation:
+  type: article
+  title: "Double dam-break-generated swash flows on a rough planar beach"
+  doi: 10.1063/5.0315268
+  journal: "Physics of Fluids"
+  volume: 38
+  year: 2026
+  authors:
+    - family-names: Min
+      given-names: Yongchim
+    - family-names: Ok
+      given-names: Juhee
+    - family-names: Kim
+      given-names: Yeulwoo
+    - family-names: Delisle
+      given-names: Marie-Pierre C.
+    - family-names: Choi
+      given-names: Seongeun
